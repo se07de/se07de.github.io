@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>user@home &gt; newtab</title>
+
+	<style>
+		html {
+			align-items: center;
+			background-color: #120a12;
+			color: #c5c8c6;
+			display: flex;
+			font: 22px/1 "Inconsolata", monospace;
+			height: 100%;
+			justify-content: center;
+		}
+		
+		body {
+			background-color: #3c2a3c;
+			border-radius: 2px;
+			box-shadow: 1px 1px 6px #1d1f2187;
+			color: #c5c8c6;
+			display: flex;
+			flex-direction: column;
+			min-height: 30ch;
+			min-width: 50vw;
+			padding: 2em;
+		}
+		
+		p {
+			margin: 0;
+		}
+		
+		p span {
+			color: #7ecfca;
+		}
+		
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+		
+		a:focus,
+		a:hover {
+			font-weight: bold;
+			color: #dfa4f5;
+		}
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav {
+			column-gap: 2em;
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			padding: 1em 0;
+		}
+		
+		ul:nth-child(5n + 1) li:first-child {
+			color: #cd7d84;
+		}
+
+		ul:nth-child(5n + 2) li:first-child {
+			color: #a77ba7;
+		}
+
+		ul:nth-child(5n + 3) li:first-child {
+			color: #cd81e1;
+		}
+
+		ul:nth-child(5n + 4) li:first-child {
+			color: #f99fb5;
+		}
+
+		ul:nth-child(5n + 5) li:first-child {
+			color: #85678f;
+		}
+		
+		li:first-child {
+			font-weight: bold;
+		}
+		
+		li:last-child {
+			margin: 0 0 1em;
+		}
+		
+		p #cursor {
+			background-color: #b5bd68;
+			animation: blink 2s infinite;
+		}
+
+		@keyframes blink {
+			0% { opacity: 0; }
+			49% { opacity: 0; }
+			50% { opacity: 1; }
+    }
+		
+	</style>
+</head>
+
+<body>
+	<p><span>serenade@home &gt; </span>newtab</p>
+	
+	<nav>
+		<ul>
+			<li>4chan</li>
+			<li><a href="https://boards.4channel.org/a/">anime/manga</a></li>
+			<li><a href="https://boards.4channel.org/g/">technology</a></li>
+			<li><a href="https://boards.4channel.org/gd/">graphic design</a></li>
+			<li><a href="https://boards.4channel.org/jp/">otaku culture</a></li>
+		</ul>
+		
+		<ul>
+			<li>media</li>
+			<li><a href="https://www.youtube.com/">youtube</a></li>
+			<li><a href="https://www.nicovideo.jp/">niconicodouga</a></li>
+			<li><a href="https://soundcloud.com/">soundcloud</a></li>
+			<li><a href="https://bandcamp.com/">bandcamp</a></li>
+			<li><a href="https://om3tcw.com/r/hollowmatsuridos">hollowMatsuridos</a></li>
+		</ul>
+		
+		<ul>
+			<li>social</li>
+			<li><a href="https://twitter.com/">twitter</a></li>
+			<li><a href="https://instagram.com">instagram</a></li>
+		</ul>
+			
+		<ul>
+			<li>education</li>
+			<li><a href="https://experienciavivo.duoc.cl/">experiencia vivo</a></li>
+			<li><a href="https://campusvirtual.duoc.cl/">ava - campus virtual</a></li>
+			<li><a href="https://libgen.is/">library genesis</a></li>
+			<li><a href="https://www2.duoc.cl/portal-de-pagos-en-linea/">pagos en linea</a></li>
+		</ul>
+		
+	</nav>
+	
+	<p><span>serenade@home &gt; </span> <span id="cursor">_</p>
+	
+</body>
+</html>
